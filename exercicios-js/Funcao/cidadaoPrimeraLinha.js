@@ -5,6 +5,7 @@
 function fun(){return 'Sou a fun' }
 
 // armazenar em uma variavel
+// além de ser uma função anonima
 const fun2 = function(){return 'Sou a fun2'}
 
 // armazenar em um Array
@@ -20,8 +21,8 @@ obj.falar = function(){return `Opa!!`}
 console.log(obj.falar())
 
 // passar uma função como param
-function run(fun2) {
-    return fun2()
+function run(funtotal) {
+    return funtotal()
 }
 console.log(run(fun2))
 
@@ -33,5 +34,6 @@ function soma(a,b){
     }
 }
 soma(3,2)(5)
-
+const ret = soma(3,2)
+ret(6)
  
